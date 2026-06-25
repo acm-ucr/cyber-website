@@ -1,4 +1,4 @@
-# ACM UCR Website Template
+# Cyber@UCR Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -13,11 +13,11 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[Cyber@UCR Figma Design File](https://www.figma.com/design/7zRodcs5D4uGleiWpA8AQx/cyber-website-v1?node-id=0-1&p=f&t=1n2guNyDaoovFUam-0)
 
 ## Node.js
 
-ACM UCR Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+Cyber@UCR Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
