@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme inline {
+  --font-cyber-main: var(--font-cyber-main);
+  --color-cyber-lightgreen-100: #dfffe0;
+}
