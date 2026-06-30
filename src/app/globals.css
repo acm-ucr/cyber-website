@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: url("/cyber_background.jpg");
+  background-image: url("/cyber_background.webp");
   background-position: top;
   color: var(--color-cyber-white);
   background-repeat: no-repeat;
