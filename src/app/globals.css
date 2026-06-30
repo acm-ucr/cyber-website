@@ -2,5 +2,20 @@
 
 @theme inline {
   --font-cyber-main: var(--font-cyber-main);
-  --color-cyber-lightgreen-100: #dfffe0;
+  --color-cyber-lightgreen: #dfffe0;
+  --color-cyber-neongreen: #00ff00;
+  --color-cyber-darkgreen: #00ff001a;
+  --color-cyber-black: #0000001a;
+  --color-cyber-white: #ffffff;
+  --color-cyber-red: #ff0000;
+  --color-cyber-darkred: #ff00001a;
+}
+
+body {
+  background-image: url("/cyber_background.jpg");
+  background-position: top;
+  color: var(--color-cyber-white);
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-size: cover;
 }
