@@ -2,8 +2,8 @@ import SocialsPage from "@/components/socials/SocialsPage";
 
 const Socials = () => {
   return (
-    <div className=" ">
-      <SocialsPage> </SocialsPage>
+    <div>
+      <SocialsPage></SocialsPage>
     </div>
   );
 };
