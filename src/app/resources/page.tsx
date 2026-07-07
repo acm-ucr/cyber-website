@@ -1,7 +1,7 @@
 import GnuLinux from "@/components/resources/gnuLinux";
 
 const Resources = () => {
-  return ( <GnuLinux /> );
+  return <GnuLinux />;
 };
 
 export default Resources;
