@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { gnuLinuxData } from "@/data/gnuLinux";
 
 const GnuLinux = () => {
@@ -14,9 +15,9 @@ const GnuLinux = () => {
         </div>
 
         <div className="text-cyber-white flex flex-col text-2xl">
-          {" "}
+          <br />
           {gnuLinuxData.body.map((link, i) => (
-            <a
+            <Link
               href={link}
               key={i}
               target="_blank"
@@ -24,7 +25,7 @@ const GnuLinux = () => {
               className="text-cyber-white hover:text-cyber-neongreen underline"
             >
               {link}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
