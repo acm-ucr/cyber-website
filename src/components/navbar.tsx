@@ -30,7 +30,7 @@ const Navbar = () => {
 
     updateTime();
 
-    const interval = setInterval(updateTime, 1000);
+    const interval = setInterval(updateTime, 6000);
 
     return () => clearInterval(interval);
   }, []);
