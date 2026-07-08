@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Inter, Geist_Mono } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
+import Navbar from "@/components/navbar";
+import { NavbarProvider } from "./context/navbar-context";
 
 const inter = Inter({ subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -22,7 +24,12 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={geistMono.variable}>
       <body className={inter.className}>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <NavbarProvider>
+          <ReactQueryClientProvider>
+            <Navbar />
+            {children}
+          </ReactQueryClientProvider>
+        </NavbarProvider>
       </body>
     </html>
   );
