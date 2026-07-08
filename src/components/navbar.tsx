@@ -4,7 +4,7 @@ import { navigations } from "@/data/navigation";
 import { useState, useEffect, Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/cyberlogo.svg";
+import Logo from "@/public/cyberlogo_text.png";
 import { useNavbarTheme } from "@/app/context/navbar-context";
 
 const Navbar = () => {
@@ -39,7 +39,15 @@ const Navbar = () => {
     <div className="flex items-center justify-between px-5 py-5">
       <Link href="/">
         <div className={`flex items-center rounded-sm px-4 py-2 ${boxClasses}`}>
-          <Image src={Logo} alt="cyber-logo" />
+          <Image
+            src={Logo}
+            alt="cyber-logo"
+            className={
+              theme === "red"
+                ? "[filter:brightness(0)_saturate(100%)_invert(19%)_sepia(90%)_saturate(4156%)_hue-rotate(346deg)_brightness(94%)_contrast(97%)]"
+                : ""
+            }
+          />
         </div>
       </Link>
 
