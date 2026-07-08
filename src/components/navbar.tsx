@@ -4,7 +4,7 @@ import { navigations } from "@/data/navigation";
 import { useState, useEffect, Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/cyberlogo_text.png";
+import Logo from "@/public/cyberlogo_text.webp";
 import { useNavbarTheme } from "@/app/context/navbar-context";
 
 const Navbar = () => {
