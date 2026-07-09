@@ -9,7 +9,7 @@ const Goals = () => {
     competitionsTitle,
   } = goalsData;
   return (
-    <div className="mx-auto max-w-3xl space-y-12 bg-black px-6 py-12 font-mono text-white">
+    <div className="space-y-12 font-mono text-white">
       <div className="space-y-4">
         <div className="text-4xl font-bold tracking-tight">{title}</div>
         <p className="text-cyber-lightgreen max-w-2xl text-lg leading-relaxed">
