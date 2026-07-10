@@ -9,9 +9,7 @@ const Web = () => {
           {webData.title}
         </div>
 
-        <div className="text-cyber-lightgreen text-2xl">
-          {webData.subtitle}
-        </div>
+        <div className="text-cyber-lightgreen text-2xl">{webData.subtitle}</div>
 
         <div className="text-cyber-white flex flex-col text-2xl">
           <br />
