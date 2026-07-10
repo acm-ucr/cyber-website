@@ -1,7 +1,7 @@
-import GnuLinux from "@/components/resources/gnuLinux";
+import Networks from "@/components/resources/networks";
 
 const Resources = () => {
-  return <GnuLinux />;
+  return <Networks />;
 };
 
 export default Resources;
