@@ -95,7 +95,7 @@ const Navbar = () => {
           } ${boxClasses}`}
         >
           <span>menu</span>
-          <Image src={MenuLogo} alt="" className="h-5 w-5" />
+          <Image src={MenuLogo} alt="" className="h-8 w-8" />
         </button>
       </div>
 
