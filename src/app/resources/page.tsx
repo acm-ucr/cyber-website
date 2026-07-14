@@ -1,7 +1,7 @@
-import Networks from "@/components/resources/networks";
+import { redirect } from "next/navigation";
 
-const Resources = () => {
-  return <Networks />;
+const ResourcesPage = () => {
+  redirect("/resources/networks");
 };
 
-export default Resources;
+export default ResourcesPage;
