@@ -19,3 +19,11 @@ body {
   background-color: #000000;
   background-size: cover;
 }
+
+.terminal-content {
+  scrollbar-width: none;
+}
+
+.terminal-content::-webkit-scrollbar {
+  display: none;
+}
