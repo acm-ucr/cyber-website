@@ -17,7 +17,7 @@ const Navbar = () => {
   const boxClasses =
     theme === "red"
       ? "bg-red-500/10 border border-red-500/30 text-red-400"
-      : "md:bg-cyber-lightgreen/10 border md:border-cyber-lightgreen/30 bg-black/70 text-cyber-lightgreen border-cyber-neongreen/50";
+      : "md:bg-cyber-lightgreen/10 md:border md:border-cyber-lightgreen/30 bg-black/70 text-cyber-lightgreen border-[2px] border-cyber-neongreen/70";
 
   const mobileBoxClasses =
     theme === "red"
