@@ -47,10 +47,10 @@ const Sidebar = ({ type }: SidebarProperties) => {
           const isActive = pathname === link.href;
           return (
             <Link
-              key={ index }
-              href={ link.href }
-              target={ link.isExternalSite ? "_blank" : undefined }
-              rel={ link.isExternalSite ? "noopener noreferrer" : undefined }
+              key={index}
+              href={link.href}
+              target={link.isExternalSite ? "_blank" : undefined}
+              rel={link.isExternalSite ? "noopener noreferrer" : undefined}
               style={{
                 borderColor: "#9dffc3",
                 backgroundColor: isActive
@@ -59,9 +59,9 @@ const Sidebar = ({ type }: SidebarProperties) => {
               }}
               className="flex w-full items-center justify-between overflow-hidden border p-3"
             >
-              <span className="truncate pr-2">{ link.label }</span>
+              <span className="truncate pr-2">{link.label}</span>
               <span className="flex shrink-0 items-center justify-center">
-                { link.isExternalSite && (
+                {link.isExternalSite && (
                   <ExternalLink size={14} className="stroke-[3]" />
                 )}
               </span>
