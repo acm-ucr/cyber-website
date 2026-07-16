@@ -90,8 +90,10 @@ const Navbar = () => {
           aria-label="Toggle menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((prev) => !prev)}
-          className={`font-cyber-main flex items-center rounded-t-lg font-semibold backdrop-blur-sm md:hidden ${
-            isOpen ? "w-full justify-between px-4 py-3" : "gap-4 px-4 py-2.5"
+          className={`font-cyber-main flex items-center font-semibold backdrop-blur-sm md:hidden ${
+            isOpen
+              ? "w-full justify-between rounded-t-lg px-4 py-3"
+              : "gap-4 rounded-lg px-4 py-2.5"
           } ${boxClasses}`}
         >
           <span>menu</span>
@@ -115,7 +117,7 @@ const Navbar = () => {
                   <div
                     className={`flex aspect-square w-full items-center justify-center rounded-2xl transition-colors ${mobileBoxClasses}`}
                   >
-                    <Icon className="h-8 w-8" strokeWidth={1.5} />
+                    <Icon className="h-12 w-12" strokeWidth={1} />
                   </div>
                   <span className="text-sm font-semibold">{name}</span>
                 </Link>
