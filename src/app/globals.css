@@ -27,3 +27,29 @@ body {
 .terminal-content::-webkit-scrollbar {
   display: none;
 }
+
+@layer components {
+  /* Common styles for both scrollbars */
+  .scrollbar-base::-webkit-scrollbar {
+    width: 8px; /* This is w-2 */
+  }
+
+  .scrollbar-base::-webkit-scrollbar-track {
+    background: transparent;
+    margin-bottom: 27px;
+  }
+
+  .scrollbar-base::-webkit-scrollbar-thumb {
+    border-radius: 9999px; /* This is rounded-full */
+  }
+
+  /* Red Theme Specific */
+  .scrollbar-red::-webkit-scrollbar-thumb {
+    @apply bg-cyber-red;
+  }
+
+  /* Non-Red (Default) Theme Specific */
+  .scrollbar-default::-webkit-scrollbar-thumb {
+    @apply bg-cyber-lightgreen;
+  }
+}

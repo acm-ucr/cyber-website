@@ -5,12 +5,12 @@ import { useState, useEffect, Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/cyberlogo_text.webp";
-import { useNavbarTheme } from "@/app/context/navbar-context";
+import { useTheme } from "@/app/context/theme-context";
 
 const Navbar = () => {
   const [time, setTime] = useState("");
   const [mounted, setMounted] = useState(false);
-  const { theme } = useNavbarTheme();
+  const { theme } = useTheme();
   const boxClasses =
     theme === "red"
       ? "bg-red-500/10 border border-red-500/30 text-red-400"
