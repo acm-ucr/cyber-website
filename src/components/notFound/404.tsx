@@ -25,7 +25,7 @@ const NotFound = () => {
       <div className="flex justify-center">
         <Link
           href="/"
-          className="rounded border border-white/50 px-8 py-3 font-bold text-white transition-colors hover:border-white"
+          className="rounded border border-cyber-red/50 px-8 py-3 font-bold text-white transition-colors hover:border-b-cyber-darkred"
         >
           return home
         </Link>
