@@ -7,7 +7,7 @@ import Email from "@/public/Mail.svg";
 
 const Footer = () => {
   return (
-    <div className="mr-8 flex w-4/5 justify-end gap-2">
+    <div className="mx-auto my-8 flex w-9/10 justify-end gap-2">
       <Link href="mailto:cyberucr@gmail.com">
         <Image src={Email} alt="Email icon" className="p-0.5" />
       </Link>
