@@ -14,19 +14,19 @@ export const sidebarData: Record<"about" | "resources", SidebarConfig> = {
     pages: [
       {
         label: "origins.conf",
-        href: "#about",
+        href: "/about/origins",
       },
       {
         label: "goals.conf",
-        href: "#goals",
+        href: "/about/goals",
       },
       {
         label: "competitions.conf",
-        href: "#competitions",
+        href: "/about/competitions",
       },
       {
         label: "general_meetings.conf",
-        href: "#meetings",
+        href: "/about/generalmeetings",
       },
     ],
     links: [
@@ -46,33 +46,33 @@ export const sidebarData: Record<"about" | "resources", SidebarConfig> = {
     pages: [
       {
         label: "networks.log",
-        href: "#networks",
+        href: "/resources/networks",
       },
       {
         label: "gnu_linux.log",
-        href: "#gnulinux",
+        href: "/resources/gnulinux",
       },
       {
         label: "incident_response.log",
-        href: "#incidentresponse",
+        href: "/resources/incidentresponse",
       },
       {
         label: "windows.log",
-        href: "#windows",
+        href: "/resources/windows",
       },
       {
         label: "web.log",
-        href: "#web",
+        href: "/resources/web",
       },
       {
         label: "CTF.log",
-        href: "#ctf",
+        href: "/resources/ctf",
       },
     ],
     links: [
       {
         label: "Cyber@UCR CTFs.csv",
-        href: "https://ctf.cyberucr.org",
+        href: "https://ctf.ucrcyber.org",
         isExternalSite: true,
       },
     ],
