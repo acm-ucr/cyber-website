@@ -1,0 +1,45 @@
+"use client";
+import { ReactNode } from "react";
+import { useTheme } from "@/app/context/theme-context";
+import { useWindow } from "@/app/context/window-context";
+
+interface WindowProps {
+  children: ReactNode;
+}
+
+const Window = ({ children }: WindowProps) => {
+  const { theme } = useTheme();
+  const { command } = useWindow();
+  const borderColor =
+    theme == "red" ? "border-cyber-red" : "border-cyber-neongreen";
+  const textColor = theme == "red" ? "text-cyber-red" : "text-cyber-white";
+
+  const glow =
+    theme == "red"
+      ? "shadow-[0_0_35px_var(--color-cyber-darkred)]"
+      : "shadow-[0_0_35px_var(--color-cyber-darkgreen)]";
+
+  return (
+    <div
+      className={`bg-cyber-black/45 mx-auto mt-5 h-full w-[90%] overflow-hidden backdrop-blur-md`}
+    >
+      <div
+        className={`border-cyber-lightgreen bg-cyber-black/30 font-cyber-main text-cyber-white flex h-12 items-center justify-center rounded-t-[28px] border-3 border-b-0 text-xl`}
+      >
+        cyberterm - cybersh
+      </div>
+
+      <div
+        className={`border-[3px] ${borderColor} ${glow} scrollbar-base h-[calc(100%-3rem)] overflow-hidden overflow-y-auto rounded-b-[28px] border-3 p-8 pr-4 ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
+      >
+        <div className="font-cyber-main mb-8 text-4xl">
+          <span className="text-cyber-white font-bold">cyber@ucr:~$</span>{" "}
+          <span className={textColor}>{command}</span>
+        </div>
+        {children}
+      </div>
+    </div>
+  );
+};
+
+export default Window;
