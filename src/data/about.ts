@@ -18,7 +18,8 @@ export interface AboutData {
 export const aboutData: Record<string, AboutData> = {
   origins: {
     title: "Origins",
-    subtitle: " Cyber@UCR was founded in 2016 when a group of hackers when Cyber@UCR founder @squelch came to UCR and saw a gap in security education, in spite of the abundance of hackers. He created a group to compete in the Western Regionals Collegiate Cyber Defense Competition. This team placed 3rd in Defense and earned Cyber@UCR a place in the college of engineering! Since then, Cyber@UCR has grown in size and skill every year.",
+    subtitle:
+      " Cyber@UCR was founded in 2016 when a group of hackers when Cyber@UCR founder @squelch came to UCR and saw a gap in security education, in spite of the abundance of hackers. He created a group to compete in the Western Regionals Collegiate Cyber Defense Competition. This team placed 3rd in Defense and earned Cyber@UCR a place in the college of engineering! Since then, Cyber@UCR has grown in size and skill every year.",
   },
 
   goals: {
@@ -64,7 +65,8 @@ export const aboutData: Record<string, AboutData> = {
       "Cyber@UCR's officers host biweekly general meetings that delve into various cybersecurity topics.",
     discordLink: {
       text: "Looking for slides and resources from our General Meetings?",
-      linkText: 'Check out the "resources-and-slides" channel in our Discord server!',
+      linkText:
+        'Check out the "resources-and-slides" channel in our Discord server!',
       href: "https://discord.com/invite/vESWWrm",
     },
   },

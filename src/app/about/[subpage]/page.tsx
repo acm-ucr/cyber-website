@@ -26,7 +26,7 @@ export default async function AboutSubpage({ params }: PageProps) {
   }
 
   return (
-    <div className="flex min-h-screen bg-cyber-black/10 backdrop-blur-[26px]">
+    <div className="bg-cyber-black/10 flex min-h-screen backdrop-blur-[26px]">
       <Sidebar type="about" />
       <main className="flex-1 p-8 md:p-12">
         <AboutEntry data={data} />

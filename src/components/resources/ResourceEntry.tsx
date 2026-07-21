@@ -5,17 +5,13 @@ interface ResourceEntryProperties {
   data: ResourceData;
 }
 
-const ResourceEntry = ({data}: ResourceEntryProperties) => {
+const ResourceEntry = ({ data }: ResourceEntryProperties) => {
   return (
     <div className="font-cyber-main">
       <div className="flex flex-col gap-6">
-        <div className="text-cyber-white text-5xl font-bold">
-          {data.title}
-        </div>
+        <div className="text-cyber-white text-5xl font-bold">{data.title}</div>
 
-        <div className="text-cyber-lightgreen text-2xl">
-          {data.subtitle}
-        </div>
+        <div className="text-cyber-lightgreen text-2xl">{data.subtitle}</div>
 
         <div className="text-cyber-white flex flex-col text-2xl">
           <br />
@@ -25,7 +21,7 @@ const ResourceEntry = ({data}: ResourceEntryProperties) => {
               key={i}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyber-white hover:text-cyber-neongreen underline break-all w-fit"
+              className="text-cyber-white hover:text-cyber-neongreen w-fit break-all underline"
             >
               {link}
             </Link>
@@ -34,10 +30,10 @@ const ResourceEntry = ({data}: ResourceEntryProperties) => {
       </div>
 
       {data.subtle && (
-  <div className="text-cyber-lightgreen text-2xl opacity-5 select-none mt-12">
-    {data.subtle}
-  </div>
-)}
+        <div className="text-cyber-lightgreen mt-12 text-2xl opacity-5 select-none">
+          {data.subtle}
+        </div>
+      )}
     </div>
   );
 };
