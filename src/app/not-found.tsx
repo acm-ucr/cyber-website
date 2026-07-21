@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
-import { useTheme } from "@/app/context/theme-context";
+import { useNavbarTheme } from "@/app/context/navbar-context";
+import NotFound from "@/components/notFound/404";
 
-export default function NotFound() {
-  const { setTheme } = useTheme();
+export default function NotFoundPage() {
+  const { setTheme } = useNavbarTheme();
 
   useEffect(() => {
     setTheme("red");
@@ -12,5 +13,5 @@ export default function NotFound() {
     return () => setTheme("green");
   }, [setTheme]);
 
-  return <div>404 Page Not Found</div>;
+  return <NotFound />;
 }
