@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 import { useNavbarTheme } from "@/app/context/navbar-context";
+import NotFound from "@/components/notFound/404";
 
-export default function NotFound() {
+export default function NotFoundPage() {
   const { setTheme } = useNavbarTheme();
 
   useEffect(() => {
@@ -12,5 +13,5 @@ export default function NotFound() {
     return () => setTheme("green");
   }, [setTheme]);
 
-  return <div>404 Page Not Found</div>;
+  return <NotFound />;
 }
