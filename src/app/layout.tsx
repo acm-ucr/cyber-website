@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter, Geist_Mono } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/navbar";
-import { NavbarProvider } from "./context/navbar-context";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/app/context/theme-context";
 import { WindowProvider } from "@/app/context/window-context";
