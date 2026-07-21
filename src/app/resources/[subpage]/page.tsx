@@ -26,7 +26,7 @@ const ResourceSubpage = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className="bg-cyber-black/10 flex min-h-screen backdrop-blur-[26px]">
+    <div className="bg-cyber-black/10 border-cyber-neongreen flex min-h-screen w-full border-collapse border-t-1 backdrop-blur-[26px]">
       <Sidebar type="resources" />
       <main className="flex-1 p-8 md:p-12">
         <ResourceEntry data={data} />
