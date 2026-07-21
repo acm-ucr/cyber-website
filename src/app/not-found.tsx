@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
-import { useNavbarTheme } from "@/app/context/navbar-context";
+import { useTheme } from "@/app/context/theme-context";
 
 export default function NotFound() {
-  const { setTheme } = useNavbarTheme();
+  const { setTheme } = useTheme();
 
   useEffect(() => {
     setTheme("red");
