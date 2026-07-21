@@ -1,27 +1,31 @@
 import Link from "next/link";
-import { gnuLinuxData } from "@/data/gnuLinux";
+import { ResourceData } from "@/data/resources";
 
-const GnuLinux = () => {
+interface ResourceEntryProperties {
+  data: ResourceData;
+}
+
+const ResourceEntry = ({data}: ResourceEntryProperties) => {
   return (
     <div className="font-cyber-main">
       <div className="flex flex-col gap-6">
         <div className="text-cyber-white text-5xl font-bold">
-          {gnuLinuxData.title}
+          {data.title}
         </div>
 
         <div className="text-cyber-lightgreen text-2xl">
-          {gnuLinuxData.subtitle}
+          {data.subtitle}
         </div>
 
         <div className="text-cyber-white flex flex-col text-2xl">
           <br />
-          {gnuLinuxData.body.map((link, i) => (
+          {data.body.map((link, i) => (
             <Link
               href={link}
               key={i}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyber-white hover:text-cyber-neongreen underline"
+              className="text-cyber-white hover:text-cyber-neongreen underline break-all w-fit"
             >
               {link}
             </Link>
@@ -29,11 +33,13 @@ const GnuLinux = () => {
         </div>
       </div>
 
-      <div className="text-cyber-lightgreen text-2xl opacity-5 select-none">
-        {gnuLinuxData.subtle}
-      </div>
+      {data.subtle && (
+  <div className="text-cyber-lightgreen text-2xl opacity-5 select-none mt-12">
+    {data.subtle}
+  </div>
+)}
     </div>
   );
 };
 
-export default GnuLinux;
+export default ResourceEntry;
