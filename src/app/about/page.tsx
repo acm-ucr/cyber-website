@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
 
-export default function AboutRootPage() {
+const AboutRootPage = () => {
   redirect("/about/origins");
-}
+};
+
+export default AboutRootPage;

@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
 
-export default function ResourcesRootPage() {
+const ResourcesRootPage = () => {
   redirect("/resources/networks");
-}
+};
+
+export default ResourcesRootPage;

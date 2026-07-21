@@ -9,15 +9,15 @@ interface PageProps {
   }>;
 }
 
-export const dynamicParams = false;
+const dynamicParams = false;
 
-export async function generateStaticParams() {
+const generateStaticParams = async () => {
   return Object.keys(aboutData).map((key) => ({
     subpage: key,
   }));
-}
+};
 
-export default async function AboutSubpage({ params }: PageProps) {
+const AboutSubpage = async ({ params }: PageProps) => {
   const { subpage } = await params;
   const data = aboutData[subpage];
 
@@ -33,4 +33,7 @@ export default async function AboutSubpage({ params }: PageProps) {
       </main>
     </div>
   );
-}
+};
+
+export { dynamicParams, generateStaticParams };
+export default AboutSubpage;
