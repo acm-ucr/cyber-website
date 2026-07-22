@@ -1,11 +1,7 @@
-import Goals from "@/components/about/Goals";
+import { redirect } from "next/navigation";
 
-const About = () => {
-  return (
-    <>
-      <Goals />
-    </>
-  );
+const AboutRootPage = () => {
+  redirect("/about/origins");
 };
 
-export default About;
+export default AboutRootPage;

@@ -30,9 +30,9 @@ const Window = ({ children }: WindowProps) => {
       </div>
 
       <div
-        className={`border-[3px] ${borderColor} ${glow} scrollbar-base h-[calc(100%-3rem)] overflow-hidden overflow-y-auto rounded-b-[28px] border-3 p-8 pr-4 ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
+        className={`border-[3px] ${borderColor} ${glow} scrollbar-base h-[calc(100%-3rem)] overflow-hidden overflow-y-auto rounded-b-[28px] border-3 ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
       >
-        <div className="font-cyber-main mb-8 text-4xl">
+        <div className="font-cyber-main m-3 text-2xl">
           <span className="text-cyber-white font-bold">cyber@ucr:~$</span>{" "}
           <span className={textColor}>{command}</span>
         </div>
