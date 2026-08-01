@@ -1,7 +1,7 @@
-import GnuLinux from "@/components/resources/gnuLinux";
+import { redirect } from "next/navigation";
 
-const Resources = () => {
-  return <GnuLinux />;
+const ResourcesRootPage = () => {
+  redirect("/resources/networks");
 };
 
-export default Resources;
+export default ResourcesRootPage;
