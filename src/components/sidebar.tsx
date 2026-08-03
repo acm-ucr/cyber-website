@@ -18,7 +18,7 @@ const Sidebar = ({ type }: SidebarProperties) => {
   return (
     <aside
       style={{ borderColor: "#00ff00" }}
-      className="font-cyber-main sticky top-0 flex h-screen w-80 flex-col justify-between rounded-b-2xl border font-extrabold"
+      className="font-cyber-main sticky top-0 hidden h-screen w-80 flex-col justify-between rounded-b-2xl border font-extrabold md:flex"
     >
       <div className="flex h-full w-full flex-col">
         {currentData.pages.map((page, index) => {
