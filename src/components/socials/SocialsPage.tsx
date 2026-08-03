@@ -41,7 +41,7 @@ const SocialsPage = () => {
                 href="https://discord.ucrcyber.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-cyber-lightgreen mt-6 mb-2 ml-8 grid w-[75%] grid-cols-3 items-center rounded-2xl border-2 px-6 py-3 lg:hidden"
+                className="border-cyber-lightgreen mx-auto mt-6 mb-2 flex w-[80%] items-center justify-center gap-3 rounded-2xl border-2 px-4 py-3 whitespace-nowrap lg:hidden"
               >
                 <Image src={discordLogo} alt="discordLogo" className=""></Image>
                 <div className="justify-self-center">discord</div>
@@ -71,7 +71,7 @@ const SocialsPage = () => {
                 href="https://linkedin.com/company/cyberucr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-cyber-lightgreen mt-6 mb-2 ml-8 grid w-[75%] grid-cols-3 items-center rounded-2xl border-2 px-6 py-3 lg:hidden"
+                className="border-cyber-lightgreen mx-auto mt-6 mb-2 flex w-[80%] items-center justify-center gap-3 rounded-2xl border-2 px-4 py-3 whitespace-nowrap lg:hidden"
               >
                 <Image
                   src={linkedinLogo}
@@ -105,7 +105,7 @@ const SocialsPage = () => {
                 href="https://www.instagram.com/cyber_ucr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-cyber-lightgreen mt-6 mb-2 ml-8 grid w-[75%] grid-cols-3 items-center rounded-2xl border-2 px-6 py-3 lg:hidden"
+                className="border-cyber-lightgreen mx-auto mt-6 mb-2 flex w-[80%] items-center justify-center gap-3 rounded-2xl border-2 px-4 py-3 whitespace-nowrap lg:hidden"
               >
                 <Image src={instaLogo} alt="discordLogo" className=""></Image>
                 <div className="justify-self-center">instagram</div>
