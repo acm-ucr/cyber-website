@@ -5,22 +5,7 @@ const BoardEntry = ({ name, email, position, image, bio }: BoardMember) => {
   const firstName = name.trim().split(/\s+/)[0]?.toLowerCase() ?? "";
 
   return (
-    <div className="font-cyber-main text-cyber-lightgreen mx-auto flex w-2/3 flex-col gap-8">
-      <div className="flex gap-4 text-xl">
-        <p className="w-2/5 shrink-0 text-white">
-          <span className="font-bold">cyber@ucr:~$</span>
-          <span className="ml-3">id</span>
-          <a
-            href={`mailto:${email}`}
-            className="hover:text-cyber-neongreen ml-3 underline"
-          >
-            {email}
-          </a>
-        </p>
-
-        <p className="text-cyber-lightgreen/40"># click to email {firstName}</p>
-      </div>
-
+    <div className="font-cyber-main text-cyber-lightgreen mx-auto flex w-full flex-col gap-8">
       <hr className="border-cyber-lightgreen/30" />
 
       <div className="flex items-start gap-4">
