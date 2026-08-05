@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { BoardMember } from "@/data/board";
 
-const BoardEntry = ({ name, email, position, image, bio }: BoardMember) => {
+const BoardEntry = ({ name, position, image, bio }: BoardMember) => {
   const firstName = name.trim().split(/\s+/)[0]?.toLowerCase() ?? "";
 
   return (
