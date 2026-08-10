@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
-import Kiana from "@/public/board/kiana.png";
-import Siddharth from "@/public/board/siddharth.jpg";
-import Felicia from "@/public/board/felicia.jpg";
-import Shantel from "@/public/board/shantel.png";
-import Jacob from "@/public/board/jacob.jpg";
-import Celso from "@/public/board/celso.png";
+import Kiana from "@/public/board/kiana.webp";
+import Siddharth from "@/public/board/siddharth.webp";
+import Felicia from "@/public/board/felicia.webp";
+import Shantel from "@/public/board/shantel.webp";
+import Jacob from "@/public/board/jacob.webp";
+import Celso from "@/public/board/celso.webp";
 
 export interface BoardData {
   name: string;
