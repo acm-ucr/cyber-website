@@ -26,9 +26,9 @@ const AboutSubpage = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className="bg-cyber-black/10 border-cyber-neongreen flex min-h-screen border-collapse border-t-1 backdrop-blur-[26px]">
+    <div className="bg-cyber-black/10 border-cyber-neongreen flex w-full border-collapse flex-col border-t-1 backdrop-blur-[26px] md:flex-row">
       <Sidebar type="about" />
-      <main className="flex-1 p-8 md:p-12">
+      <main className="relative z-10 w-full flex-1 p-4 md:p-12">
         <AboutEntry data={data} />
       </main>
     </div>
