@@ -1,41 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
-import Discord from "@/public/Discord.svg";
-import Instagram from "@/public/Instagram.svg";
-import LinkedIn from "@/public/Linkedin.svg";
-import Email from "@/public/Mail.svg";
+import { footerLinks, FooterLink } from "@/data/Footer";
 
 const Footer = () => {
   return (
-    <div className="mx-auto my-8 flex w-9/10 justify-end gap-2">
-      <Link href="mailto:cyberucr@gmail.com">
-        <Image src={Email} alt="Email icon" className="p-0.5" />
-      </Link>
-
-      <Link
-        href="https://www.instagram.com/cyber_ucr/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image src={Instagram} alt="Instagram icon" className="p-0.5" />
-      </Link>
-
-      <Link
-        href="https://discord.ucrcyber.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image src={Discord} alt="Discord icon" className="p-0.5" />
-      </Link>
-
-      <Link
-        href="https://linkedin.com/company/cyberucr"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image src={LinkedIn} alt="LinkedIn icon" className="p-0.5" />
-      </Link>
-    </div>
+    <footer className="mx-auto my-8 flex w-9/10 justify-center gap-[31px] md:justify-end md:gap-2">
+      {footerLinks.map(
+        ({ href, icon, alt, external }: FooterLink, index: number) => (
+          <Link
+            key={index}
+            href={href}
+            target={external ? "_blank" : undefined}
+            rel={external ? "noopener noreferrer" : undefined}
+          >
+            <Image
+              src={icon}
+              alt={alt}
+              className="h-[50px] w-[50px] rounded-[10px] border border-[#9DFFC3] p-2 md:h-auto md:w-auto md:rounded-none md:border-none md:p-0.5"
+            />
+          </Link>
+        ),
+      )}
+    </footer>
   );
 };
 
