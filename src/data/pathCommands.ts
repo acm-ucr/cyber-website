@@ -5,7 +5,7 @@ interface Configuration {
 export const PathCommands: Configuration = {
   "/": "cyberfetch",
   "/about": "man cyber",
-  "/board": "cat /etc/passwd",
+  "/board": "id khoss010@ucr.edu   # click to email kiana",
   "/socials": "ip link | grep cyber0",
   "/calendar": "cal",
   "/resources": "grep “resources”",
