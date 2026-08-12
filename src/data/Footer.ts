@@ -15,25 +15,25 @@ export const footerLinks: FooterLink[] = [
   {
     href: "mailto:cyberucr@gmail.com",
     icon: Email,
-    alt: "Email icon",
+    alt: "Email Icon",
     external: false,
   },
   {
     href: "https://www.instagram.com/cyber_ucr/",
     icon: Instagram,
-    alt: "Instagram icon",
+    alt: "Instagram Icon",
     external: true,
   },
   {
     href: "https://discord.ucrcyber.org/",
     icon: Discord,
-    alt: "Discord icon",
+    alt: "Discord Icon",
     external: true,
   },
   {
     href: "https://linkedin.com/company/cyberucr",
     icon: LinkedIn,
-    alt: "LinkedIn icon",
+    alt: "LinkedIn Icon",
     external: true,
   },
 ];
