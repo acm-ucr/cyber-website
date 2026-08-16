@@ -1,7 +1,7 @@
 import Image from "next/image";
-import type { BoardMember } from "@/data/board";
+import type { BoardData } from "@/data/board";
 
-const BoardEntry = ({ name, position, image, bio }: BoardMember) => {
+const BoardEntry = ({ name, role, image, bio }: BoardData) => {
   const firstName = name.trim().split(/\s+/)[0]?.toLowerCase() ?? "";
 
   return (
@@ -25,7 +25,7 @@ const BoardEntry = ({ name, position, image, bio }: BoardMember) => {
 
             <div className="border-cyber-lightgreen/60 bg-cyber-green/20 border-t p-4 text-center">
               <p className="text-2xl font-bold text-white">{firstName}</p>
-              <p className="text-2xl font-light">{position}</p>
+              <p className="text-2xl font-light">{role}</p>
             </div>
           </div>
 
