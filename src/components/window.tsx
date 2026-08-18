@@ -47,22 +47,26 @@ const Window = ({ children }: WindowProps) => {
       : "shadow-[0_0_35px_var(--color-cyber-darkgreen)]";
 
   return (
-    <div
-      className={`bg-cyber-black/45 mx-auto mt-5 h-full w-[90%] overflow-hidden backdrop-blur-md`}
-    >
+    <div className="mx-auto mt-5 flex h-auto w-[90%] flex-col md:block md:h-full md:overflow-hidden">
       <div
-        className={`border-cyber-lightgreen bg-cyber-black/30 font-cyber-main text-cyber-white flex h-12 items-center justify-center rounded-t-[28px] border-3 border-b-0 text-xl`}
+        className={`border-[3px] border-b-0 ${borderColor} bg-cyber-black/30 font-cyber-main text-cyber-white flex h-12 shrink-0 items-center justify-start rounded-t-[28px] px-4 text-lg backdrop-blur-md md:justify-center md:px-0 md:text-xl`}
       >
-        cyberterm - cybersh
+        <span className="mr-2 font-bold md:hidden">cyber@ucr:~$</span>
+        <span className={`truncate md:hidden ${textColor}`}>
+          {renderCommand(command)}
+        </span>
+
+        <span className="hidden md:block">cyberterm - cybersh</span>
       </div>
 
       <div
-        className={`border-[3px] ${borderColor} ${glow} scrollbar-base h-[calc(100%-3rem)] overflow-hidden overflow-y-auto rounded-b-[28px] border-3 ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
+        className={`border-3 ${borderColor} ${glow} scrollbar-base bg-cyber-black/45 h-auto overflow-hidden overflow-y-auto rounded-b-[28px] backdrop-blur-md md:h-[calc(100%-3rem)] ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
       >
-        <div className="font-cyber-main m-3 text-2xl">
+        <div className="font-cyber-main m-3 hidden text-2xl md:block">
           <span className="text-cyber-white font-bold">cyber@ucr:~$</span>{" "}
           <span className={textColor}>{renderCommand(command)}</span>
         </div>
+
         {children}
       </div>
     </div>
