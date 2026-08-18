@@ -15,6 +15,13 @@ const Landing = () => {
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
+      whileHover=
+      {{
+        scale: 1.05,
+        borderColor: "#00ff00",
+        boxShadow: "0 0 12px #00ff0080",
+      }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       <div className="flex flex-col gap-2 px-4 lg:flex-row">
         <MotionImage
           src={Logo}
@@ -37,7 +44,6 @@ const Landing = () => {
           </h2>
         </div>
       </div>
-
       <MotionLink
         href="/about"
         className="from-cyber-black to-cyber-darkgreen m-4 mt-6 flex justify-center justify-items-end rounded-lg border border-[#9DFFC3] bg-linear-to-b py-2 text-lg font-bold md:mt-8 md:py-3 md:text-xl lg:float-right lg:mx-4 lg:px-6 lg:py-1"
