@@ -15,13 +15,6 @@ const Landing = () => {
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      whileHover=
-      {{
-        scale: 1.05,
-        borderColor: "#00ff00",
-        boxShadow: "0 0 12px #00ff0080",
-      }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
       <div className="flex flex-col gap-2 px-4 lg:flex-row">
         <MotionImage
           src={Logo}
