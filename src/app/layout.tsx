@@ -28,7 +28,10 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang="en" className={cn("font-sans", geist.variable, geistMono.variable)}>
+    <html
+      lang="en"
+      className={cn("font-sans", geist.variable, geistMono.variable)}
+    >
       <body className={`${inter.className} relative flex h-screen flex-col`}>
         <ThemeProvider>
           <ReactQueryClientProvider>
