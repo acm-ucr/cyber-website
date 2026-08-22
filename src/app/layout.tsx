@@ -1,11 +1,14 @@
 import "./globals.css";
-import { Inter, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono, Geist } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/app/context/theme-context";
 import { WindowProvider } from "@/app/context/window-context";
 import Window from "@/components/window";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const inter = Inter({ subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -25,7 +28,7 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang="en" className={geistMono.variable}>
+    <html lang="en" className={cn("font-sans", geist.variable, geistMono.variable)}>
       <body className={`${inter.className} relative flex h-screen flex-col`}>
         <ThemeProvider>
           <ReactQueryClientProvider>
