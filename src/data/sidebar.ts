@@ -50,11 +50,11 @@ export const sidebarData: Record<"about" | "resources", SidebarConfig> = {
       },
       {
         label: "gnu_linux.log",
-        href: "/resources/gnulinux",
+        href: "/resources/gnu_linux",
       },
       {
         label: "incident_response.log",
-        href: "/resources/incidentresponse",
+        href: "/resources/incident_response",
       },
       {
         label: "windows.log",
@@ -66,7 +66,7 @@ export const sidebarData: Record<"about" | "resources", SidebarConfig> = {
       },
       {
         label: "CTF.log",
-        href: "/resources/ctf",
+        href: "/resources/CTF",
       },
     ],
     links: [
