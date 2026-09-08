@@ -3,6 +3,7 @@
 @theme inline {
   --font-cyber-main: var(--font-cyber-main);
   --color-cyber-lightgreen: #dfffe0;
+  --color-cyber-lightishgreen: #9dffc3;
   --color-cyber-neongreen: #00ff00;
   --color-cyber-darkgreen: #00ff001a;
   --color-cyber-black: #0000001a;
@@ -12,12 +13,27 @@
 }
 
 body {
+  position: relative;
+  color: var(--color-cyber-white);
+  background-color: #000000;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background-image: url("/cyber_background.webp");
   background-position: top;
-  color: var(--color-cyber-white);
   background-repeat: no-repeat;
-  background-color: #000000;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  body::before {
+    filter: blur(8px) brightness(2);
+    transform: scale(1.1);
+  }
 }
 
 .terminal-content {
