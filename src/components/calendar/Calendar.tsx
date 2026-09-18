@@ -175,8 +175,8 @@ const Calendar = () => {
   }
 
   return (
-    <div className="flex h-[850px] w-full flex-col px-10 pb-15">
-      <div className="my-8 flex items-center justify-center gap-10">
+    <div className="flex h-[620px] w-full flex-col px-10 pb-15">
+      <div className="my-5 flex items-center justify-center gap-8">
         <button
           onClick={goToPreviousMonth}
           className="text-cyber-lightgreen hover:text-cyber-neongreen text-3xl transition"
@@ -198,12 +198,12 @@ const Calendar = () => {
         </button>
       </div>
 
-      <div className="border-cyber-lightgreen mx-auto flex min-h-[650px] w-[92%] flex-1 flex-col overflow-hidden rounded-xl border">
+      <div className="border-cyber-lightgreen mx-auto flex min-h-[600px] w-[85%] flex-1 flex-col overflow-hidden rounded-xl border">
         <div className="border-cyber-lightgreen bg-cyber-darkgreen grid grid-cols-7 border-b">
           {DAYS.map((day) => (
             <div
               key={day}
-              className="border-cyber-lightgreen font-cyber-main text-cyber-lightgreen border-r py-3 text-center text-lg last:border-r-0"
+              className="border-cyber-lightgreen font-cyber-main text-cyber-lightgreen text-md border-r py-2 text-center last:border-r-0"
             >
               {day}
             </div>
