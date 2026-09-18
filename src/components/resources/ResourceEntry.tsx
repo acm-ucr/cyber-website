@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import Link from "next/link";
 import { ResourceData } from "@/data/resources";
 
@@ -7,7 +9,12 @@ interface ResourceEntryProperties {
 
 const ResourceEntry = ({ data }: ResourceEntryProperties) => {
   return (
-    <div className="font-cyber-main">
+    <motion.div
+      initial={{ opacity: 0, x: -30 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="font-cyber-main"
+    >
       <div className="flex flex-col gap-6">
         <div className="text-cyber-white text-5xl font-bold">{data.title}</div>
 
@@ -34,7 +41,7 @@ const ResourceEntry = ({ data }: ResourceEntryProperties) => {
           {data.subtle}
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

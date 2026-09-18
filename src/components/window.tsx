@@ -60,14 +60,14 @@ const Window = ({ children }: WindowProps) => {
       </div>
 
       <div
-        className={`border-3 ${borderColor} ${glow} scrollbar-base bg-cyber-black/45 h-auto overflow-hidden overflow-y-auto rounded-b-[28px] backdrop-blur-md md:h-[calc(100%-3rem)] ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
+        className={`border-3 ${borderColor} ${glow} scrollbar-base bg-cyber-black/45 flex h-auto flex-col overflow-hidden overflow-y-auto rounded-b-[28px] backdrop-blur-md md:h-[calc(100%-3rem)] ${theme == "red" ? "scrollbar-red" : "scrollbar-default"}`}
       >
-        <div className="font-cyber-main m-3 hidden text-2xl md:block">
+        <div className="font-cyber-main m-3 hidden shrink-0 text-2xl md:block">
           <span className="text-cyber-white font-bold">cyber@ucr:~$</span>{" "}
           <span className={textColor}>{renderCommand(command)}</span>
         </div>
 
-        {children}
+        <div className="flex-1">{children}</div>
       </div>
     </div>
   );
